@@ -5,6 +5,10 @@
 body {
   font-family: "Times New Roman", Times, serif;
 }
+.before-con {
+  width: 100%;
+  background-color: white;
+}
 .container {
   max-width: 80%;
   margin: 0 auto;
@@ -12,11 +16,11 @@ body {
 
 header {
   /* height: 5rem; */
-  background-color: gold;
+  background-color: rgb(255, 255, 255);
 }
 main {
   background-color: antiquewhite;
-  height: 70vh;
+  /* height: 100vh; */
 }
 footer {
   height: 10rem;
@@ -30,31 +34,30 @@ section {
   display: flex;
 }
 
-.header-container > div {
-  color: black;
-  padding: 10px;
-}
-
 .header-container {
   flex-direction: row;
   height: 100%;
 
   align-items: center;
-  border: thin solid gray;
+  /* border: thin solid gray; */
   justify-content: space-between;
 }
 .logo {
-  /* width: 30%; */
+  width: 30%;
   height: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
 }
 .header-left-bar {
   justify-content: flex-end;
   align-items: center;
-  /* width: 60%; */
+  width: 70%;
 }
-.header-left-bar > div {
-  padding: 10px;
+.header-left-bar > h4,
+input {
+  padding: 10px 20px;
 }
+
 @media (max-width: 768px) {
   h1 {
     font-size: 1rem;
@@ -77,4 +80,33 @@ section {
 
 .main-section {
   background-color: antiquewhite;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.text-deco {
+  background-color: lightblue;
+  padding: 10px;
+  text-align: center;
+  /* margin: 10px 0; */
+}
+.big-stone-img {
+  width: 100%;
+}
+.stone-img-deco {
+  padding: 10px;
+  margin: 10px;
+  width: 20%;
+  max-height: 20%;
+}
+.stone-img-align {
+  /* flex-wrap: wrap; */
+  justify-content: center;
 }
